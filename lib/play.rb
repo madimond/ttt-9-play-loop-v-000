@@ -41,6 +41,11 @@ m = 0
 until m == 9
   turn(board)
   m += 1
+  b = 0
+  loop do
+    b += 1
+  turn(board)
+  until b > 9
   end
 end
 
@@ -55,3 +60,7 @@ end
     "#{board[7]}" == position_taken?(board,location) &&
     "#{board[8]}" == position_taken?(board,location)
 =end
+<<<<<<< HEAD
+=======
+end
+>>>>>>> aead09db869c77c6c972e046d0e4b699b65d2a2a
